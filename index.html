@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Spectrum Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Audio Spectrum Visualizer</h1>
+        <button id="startBtn">Start Recording</button>
+        <button id="stopBtn" disabled>Stop Recording</button>
+        <a id="saveBtn" href="#" download="recording.webm">Save Recording</a>
+        <canvas id="spectrum" width="800" height="400"></canvas>
+        <label for="pitchControl">Pitch Control</label>
+        <input type="range" id="pitchControl" min="0.5" max="2" step="0.01" value="1">
+        <label for="distortionControl">Distortion Control</label>
+        <input type="range" id="distortionControl" min="0" max="1000" step="1" value="400">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

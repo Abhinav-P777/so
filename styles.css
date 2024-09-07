@@ -1,0 +1,89 @@
+/* Resetting some default styles */
+body, h1, button, canvas, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align items within the container */
+}
+
+/* Heading styling */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+    background-color: #0056b3;
+}
+
+/* Save button styling */
+#saveBtn {
+    display: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#saveBtn:hover {
+    background-color: #218838;
+}
+
+/* Canvas styling */
+canvas {
+    border: 1px solid #ccc;
+    background-color: #000;
+    width: 100%;
+    height: auto;
+    max-width: 800px; /* Ensure canvas does not exceed the width */
+}
+
+/* Control slider styling */
+input[type="range"] {
+    margin: 10px;
+    width: 100%;
+    max-width: 300px; /* Limits the slider width for better appearance */
+}
